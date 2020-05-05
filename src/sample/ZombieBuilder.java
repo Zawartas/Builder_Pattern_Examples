@@ -8,5 +8,13 @@ public interface ZombieBuilder {
     ZombieBuilder setDefenceRating(int defenceRating);
     ZombieBuilder setMovementSpeed(int movementSpeed);
 
+    public String getName();
+    public Zombie.TYPE getType();
+    public int getHealthPoints();
+    public int getAttackPower();
+    public int getDefenceRating();
+    public int getMovementSpeed();
+
+
     Zombie build();
 }

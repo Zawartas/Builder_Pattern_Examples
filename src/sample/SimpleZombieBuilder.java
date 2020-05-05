@@ -50,6 +50,36 @@ public class SimpleZombieBuilder implements ZombieBuilder {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public TYPE getType() {
+        return type;
+    }
+
+    @Override
+    public int getHealthPoints() {
+        return healthPoints;
+    }
+
+    @Override
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    @Override
+    public int getDefenceRating() {
+        return defenceRating;
+    }
+
+    @Override
+    public int getMovementSpeed() {
+        return movementSpeed;
+    }
+
+    @Override
     public Zombie build() {
         return new Zombie(name, type, healthPoints, attackPower, defenceRating, movementSpeed);
     }

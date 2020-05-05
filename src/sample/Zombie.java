@@ -22,4 +22,14 @@ public class Zombie {
         this.defenceRating = defenceRating;
         this.movementSpeed = movementSpeed;
     }
+
+//    just a thought how the Zombie could be built ONLY by ZombieBuilder
+    public Zombie(ZombieBuilder zombieBuilder) {
+        this.name = zombieBuilder.getName();
+        this.type = zombieBuilder.getType();
+        this.healthPoints = zombieBuilder.getHealthPoints();
+        this.attackPower = zombieBuilder.getAttackPower();
+        this.defenceRating = zombieBuilder.getDefenceRating();
+        this.movementSpeed = zombieBuilder.getMovementSpeed();
+    }
 }
